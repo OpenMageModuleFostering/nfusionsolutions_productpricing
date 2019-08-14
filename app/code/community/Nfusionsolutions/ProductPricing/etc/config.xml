@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Nfusionsolutions_ProductPricing extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Nfusionsolutions
+ * @package        Nfusionsolutions_ProductPricing
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Nfusionsolutions_ProductPricing>
+            <version>1.0.0</version>
+        </Nfusionsolutions_ProductPricing>
+    </modules>
+    <global>
+        <helpers>
+            <nfusionsolutions_productpricing>
+                <class>Nfusionsolutions_ProductPricing_Helper</class>
+            </nfusionsolutions_productpricing>
+        </helpers>        
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Nfusionsolutions_ProductPricing before="Mage_Adminhtml">Nfusionsolutions_ProductPricing_Adminhtml</Nfusionsolutions_ProductPricing>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <nfusionsolutions_productpricing>
+                <use>standard</use>
+                <args>
+                    <module>Nfusionsolutions_ProductPricing</module>
+                    <frontName>nfusionsolutions</frontName>
+                </args>
+            </nfusionsolutions_productpricing>
+        </routers>
+    </frontend>
+</config>

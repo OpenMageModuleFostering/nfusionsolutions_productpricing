@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Nfusionsolutions_ProductPricing</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension adds the capability in Magento to import product prices from nFusion Solutions' reliable, enterprise-class cloud platform for global financial data.</summary>
+    <description>This extension adds the capability in Magento to import products prices from nFusion Solutions' reliable, enterprise-class cloud platform for global financial data. All settings are provided in the Magento admin. When you import product prices in Magento this plugin will import prices from the nFusion Solutions cloud platform in the base currency of your Magento store. Through the use of a cron job the plugin can update prices automatically on a scheduled interval.</description>
+    <notes>Product Price Import from nFusion Solutions</notes>
+    <authors><author><name>nFusion Solutions</name><user>nfusion</user><email>support@nfusionsolutions.com</email></author></authors>
+    <date>2016-04-02</date>
+    <time>11:11:23</time>
+    <contents><target name="magecommunity"><dir name="Nfusionsolutions"><dir name="ProductPricing"><dir name="Helper"><file name="Data.php" hash="755fbe12ed02611b7369669122291770"/></dir><dir name="controllers"><file name="ProductpriceController.php" hash="b7f842507da1531c25e03885c99e2d81"/></dir><dir name="etc"><file name="adminhtml.xml" hash="8f33535f25e40175208841536680b244"/><file name="config.xml" hash="fbbd2bb5ee80953f7b8f21fcea684fa7"/><file name="system.xml" hash="dff7997122aee1b4c35a988ddecd52c2"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Nfusionsolutions_ProductPricing.xml" hash="7d38f1337f5b8c3f3b85531a913fa197"/></dir></target><target name="mage"><dir name="."><file name="User_Manual.PDF" hash="0192e62ce6dafcdb13a4524aba6d5234"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

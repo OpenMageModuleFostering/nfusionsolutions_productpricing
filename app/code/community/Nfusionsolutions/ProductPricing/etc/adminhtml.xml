@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Nfusionsolutions_ProductPricing extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Nfusionsolutions
+ * @package        Nfusionsolutions_ProductPricing
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <nfusionsolutions_productpricing translate="title" module="nfusionsolutions_productpricing">
+                                        <title>Product Pricing</title>
+                                    </nfusionsolutions_productpricing>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <nfusionsolutions_productpricing translate="title" module="nfusionsolutions_productpricing">
+                        <title>Product Pricing</title>
+                        <children>
+                            <productprice translate="title" module="nfusionsolutions_productpricing">
+                                <title>ProductPrice</title>
+                                <sort_order>0</sort_order>
+                            </productprice>
+                        </children>
+                    </nfusionsolutions_productpricing>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <nfusionsolutions_currencyexchangerates translate="title" module="nfusionsolutions_productpricing">
+            <title>nFusion Solutions</title>
+            <sort_order>100</sort_order>
+            <children>
+                <productprice translate="title" module="nfusionsolutions_productpricing">
+                    <title>Product Pricing</title> 
+                    <sort_order>10</sort_order>
+					<children>
+							<nfusionsolutions_productpricing translate="title" module="nfusionsolutions_productpricing">
+								<title>Settings</title>
+								<action>adminhtml/system_config/edit/section/nfusionsolutions_productpricing</action>
+								<sort_order>2</sort_order>
+							</nfusionsolutions_productpricing>
+						</children>
+                </productprice>
+            </children>
+        </nfusionsolutions_currencyexchangerates>
+    </menu>
+</config>
