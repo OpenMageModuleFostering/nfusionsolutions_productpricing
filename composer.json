@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Nfusionsolutions_ProductPricing",
+    "name": "openmage-module-fostering\/nfusionsolutions_productpricing",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension adds the capability in Magento to import product prices from nFusion Solutions' reliable, enterprise-class cloud platform for global financial data.",
     "authors": [
